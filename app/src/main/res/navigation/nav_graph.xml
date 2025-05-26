@@ -47,5 +47,30 @@
         android:id="@+id/homeFragment"
         android:name="com.example.foodpalapp.HomeFragment"
         android:label="HomeFragment"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_fastFoodFragment"
+            app:destination="@id/fastFoodFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_breakfastFragment"
+            app:destination="@id/breakfastFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_drinksFragment"
+            app:destination="@id/drinksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fastFoodFragment"
+        android:name="com.example.foodpalapp.FastFoodFragment"
+        android:label="FastFoodFragment"
+        tools:layout="@layout/fragment_fast_food" />
+    <fragment
+        android:id="@+id/breakfastFragment"
+        android:name="com.example.foodpalapp.BreakfastFragment"
+        android:label="BreakfastFragment"
+        tools:layout="@layout/fragment_breakfast" />
+    <fragment
+        android:id="@+id/drinksFragment"
+        android:name="com.example.foodpalapp.DrinksFragment"
+        android:label="DrinksFragment"
+        tools:layout="@layout/fragment_drinks" />
 </navigation>

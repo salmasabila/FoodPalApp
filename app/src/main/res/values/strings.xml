@@ -26,4 +26,18 @@
     <string name="classic_cheese_burger">Classic\nCheese Burger</string>
     <string name="champions_breakfast">Champions\nBreakfast</string>
     <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search for food or restaurants</string>
+    <string name="filter">Filter</string>
+    <string name="grandpas_hot_dog">Grandpa\'s Hot Dog</string>
+    <string name="very_french_fries">Very French Fries</string>
+    <string name="unicorn_popcorn">Unicorn Popcorn</string>
+    <string name="cart">Keranjang</string>
+    <string name="list">List</string>
+    <string name="profile">Profil</string>
+    <string name="croissant">Croissant</string>
+    <string name="caramel_waffle">Caramel Waffle</string>
+    <string name="pancakes">Pancakes</string>
+    <string name="egg_toast">Egg Toast</string>
+
 </resources>

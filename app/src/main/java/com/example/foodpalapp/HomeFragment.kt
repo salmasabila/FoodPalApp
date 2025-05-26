@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
+import androidx.navigation.fragment.findNavController
 
 class HomeFragment : Fragment() {
 
@@ -12,12 +14,24 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // Tambahkan logika atau listener untuk tampilan di sini jika diperlukan
+
+        view.findViewById<LinearLayout>(R.id.linearLayoutFastFoodCategory)?.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_fastFoodFragment)
+        }
+
+        view.findViewById<LinearLayout>(R.id.linearLayoutBreakfastCategory)?.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_breakfastFragment)
+        }
+
+        view.findViewById<LinearLayout>(R.id.linearLayoutDrinksCategory)?.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_drinksFragment)
+        }
+
+        // ... (Kode lain untuk HomeFragment) ...
     }
 }
