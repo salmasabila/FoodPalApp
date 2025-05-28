@@ -45,5 +45,16 @@
     <string name="lemonade">Lemonade</string>
     <string name="mint_tea">Mint Tea</string>
     <string name="login_with_email">Login</string>
-
+    <string name="your_cart">Your Cart</string>
+    <string name="cart_empty_message">Your cart is empty. Start adding some delicious food!</string>
+    <string name="checkout">Checkout</string>
+    <string name="classic_cheese_burger_item">Classic Cheese Burger</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="total">Total</string>
+    <string name="item_image">Item Image</string>
+    <string name="item_description_placeholder">Whether it\'s a quick bite on the go or a satisfying meal at home, our Popcorn is a timeless choice that never disappoints.</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="ingredients_description">Popcorn kernels, Butter, Sugar, Vanilla extract, Sprinkles, Pink food coloring, Salt.</string>
+    <string name="add_to_cart">Add To Cart</string>
 </resources>

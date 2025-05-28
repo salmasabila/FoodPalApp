@@ -76,4 +76,31 @@
         android:name="com.example.foodpalapp.DrinksFragment"
         android:label="DrinksFragment"
         tools:layout="@layout/fragment_drinks" />
+    <fragment
+        android:id="@+id/itemDetailFragment"
+        android:name="com.example.foodpalapp.ItemDetailFragment"
+        android:label="ItemDetailFragment"
+        tools:layout="@layout/fragment_item_detail" >
+        <argument
+            android:name="itemId"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_fastFoodFragment_to_itemDetailFragment"
+        app:destination="@id/itemDetailFragment" />
+    <action
+        android:id="@+id/action_itemDetailFragment_to_cartFragment"
+        app:destination="@id/cartFragment" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.foodpalapp.CartFragment"
+        android:label="CartFragment"
+        tools:layout="@layout/fragment_cart" />
+
+    <action
+        android:id="@+id/action_fastFoodFragment_to_cartFragment"
+        app:destination="@id/cartFragment" />
+
 </navigation>
