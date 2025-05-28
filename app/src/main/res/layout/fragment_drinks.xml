@@ -45,15 +45,6 @@
                 android:padding="12dp"
                 android:singleLine="true"
                 android:imeOptions="actionSearch" />
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginEnd="8dp"
-                android:src="@drawable/ic_filter"
-                android:contentDescription="@string/filter"
-                app:tint="@android:color/darker_gray" />
-
         </LinearLayout>
 
         <TextView
@@ -272,8 +263,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_home"
-                    android:tint="@android:color/white"
-                    android:contentDescription="@string/home" />
+                    android:contentDescription="@string/home"
+                    app:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -294,8 +285,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_list"
-                    android:tint="@android:color/white"
-                    android:contentDescription="@string/list" />
+                    android:contentDescription="@string/list"
+                    app:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -316,8 +307,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_cart"
-                    android:tint="@android:color/white"
-                    android:contentDescription="@string/cart" />
+                    android:contentDescription="@string/cart"
+                    app:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -338,8 +329,8 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_profile"
-                    android:tint="@android:color/white"
-                    android:contentDescription="@string/profile" />
+                    android:contentDescription="@string/profile"
+                    app:tint="@android:color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -356,19 +347,6 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:src="@drawable/ic_more"
-                    android:tint="@android:color/white"
-                    android:contentDescription="@string/more" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/more"
-                    android:textSize="12sp"
-                    android:textColor="@android:color/white" />
             </LinearLayout>
 
         </LinearLayout>

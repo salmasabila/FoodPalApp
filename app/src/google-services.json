@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "454958261829",
+    "project_id": "projectakhirpam-a02c8",
+    "storage_bucket": "projectakhirpam-a02c8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454958261829:android:e791616f0f466b34ca652c",
+        "android_client_info": {
+          "package_name": "com.example.foodpalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJOhZTNv5WA9m2AU60LyFamj9Mf_XfsCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

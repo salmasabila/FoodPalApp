@@ -15,6 +15,7 @@
     <string name="full_name">Nama Lengkap</string>
     <string name="phone_number">Nomor Telepon</string>
     <string name="sign_in">Sign In</string>
+    <string name="password">Password</string>
     <string name="today_special">today\'s special</string>
     <string name="burger_fries_cola">Burger, Fries &amp; Cola</string>
     <string name="popular_categories">Popular categories</string>
@@ -39,5 +40,8 @@
     <string name="caramel_waffle">Caramel Waffle</string>
     <string name="pancakes">Pancakes</string>
     <string name="egg_toast">Egg Toast</string>
-
+    <string name="caramel_iced_coffee">Caramel Iced Coffee</string>
+    <string name="classic_smoothie">Classic Smoothie</string>
+    <string name="lemonade">Lemonade</string>
+    <string name="mint_tea">Mint Tea</string>
 </resources>
