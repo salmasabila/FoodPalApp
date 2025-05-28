@@ -6,9 +6,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
+import com.google.firebase.auth.FirebaseAuth
 
 class LoginPhoneFragment : Fragment() {
+
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,10 +25,33 @@ class LoginPhoneFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<Button>(R.id.buttonLogInPhone)?.setOnClickListener {
-            // Lakukan proses login di sini (misalnya, verifikasi nomor telepon)
-            // Setelah berhasil login, navigasikan ke HomeFragment
-            findNavController().navigate(R.id.action_loginPhoneFragment_to_homeFragment)
+        auth = FirebaseAuth.getInstance()
+
+        val emailEditText = view.findViewById<EditText>(R.id.editTextEmailLogin)
+        val passwordEditText = view.findViewById<EditText>(R.id.editTextPasswordLogin)
+        val loginButton = view.findViewById<Button>(R.id.buttonLogInPhone)
+
+        loginButton.setOnClickListener {
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
+
+            if (email.isNotEmpty() && password.isNotEmpty()) {
+                auth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(requireActivity()) { task ->
+                        if (task.isSuccessful) {
+                            // Login berhasil, navigasi ke halaman home
+                            Toast.makeText(requireContext(), "Login successful", Toast.LENGTH_SHORT).show()
+                            findNavController().navigate(R.id.action_loginPhoneFragment_to_homeFragment)
+                        } else {
+// Jika login gagal, tampilkan pesan error ke pengguna
+                            Toast.makeText(requireContext(), "Login failed: ${task.exception?.message}", Toast.LENGTH_SHORT).show()
+                        }
+                    }
+            } else {
+                Toast.makeText(requireContext(), "Please fill email and password", Toast.LENGTH_SHORT).show()
+            }
         }
+
+        // Anda bisa menambahkan logika untuk tombol "Continue with Google/Apple/Facebook" di sini
     }
 }

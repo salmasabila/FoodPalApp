@@ -44,4 +44,6 @@
     <string name="classic_smoothie">Classic Smoothie</string>
     <string name="lemonade">Lemonade</string>
     <string name="mint_tea">Mint Tea</string>
+    <string name="login_with_email">Login</string>
+
 </resources>
