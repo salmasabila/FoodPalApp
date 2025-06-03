@@ -60,6 +60,9 @@
         <action
             android:id="@+id/action_homeFragment_to_drinksFragment"
             app:destination="@id/drinksFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/fastFoodFragment"
@@ -103,4 +106,17 @@
         android:id="@+id/action_fastFoodFragment_to_cartFragment"
         app:destination="@id/cartFragment" />
 
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.foodpalapp.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_detailProfileActivity"
+            app:destination="@id/detailProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailProfileFragment"
+        android:name="com.example.foodpalapp.DetailProfileFragment" android:label="fragment_detail_profile"
+        tools:layout="@layout/fragment_detail_profile" />
 </navigation>
